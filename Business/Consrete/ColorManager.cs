@@ -7,16 +7,19 @@ using System.Text;
 
 namespace Business.Consrete
 {
-    class ColorManager : IColorService
+    public class ColorManager : IColorService
     {
         IColorDal _colorDal;
-        public ColorManager(IColorDal colorDal )
+
+        public ColorManager(IColorDal colorDal)
         {
             _colorDal = colorDal;
         }
+
         public void Add(Color color)
         {
             _colorDal.Add(color);
+            Console.WriteLine("Renk eklendi.");
         }
 
         public void Delete(Color color)
@@ -27,6 +30,11 @@ namespace Business.Consrete
         public List<Color> GetAll()
         {
             return _colorDal.GetAll();
+        }
+
+        public Color GetCarsByColorId(int id)
+        {
+            return _colorDal.Get(c => c.ColorId == id);
         }
 
         public void Update(Color color)
