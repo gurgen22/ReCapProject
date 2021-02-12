@@ -27,7 +27,7 @@ namespace Business.Consrete
             }
             else
             {
-                return new ErrorResult(Messages.BrandNameInvalid);
+                return new ErrorResult(Messages.NameProperty);
             }
         }
 
