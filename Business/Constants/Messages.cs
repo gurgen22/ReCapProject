@@ -21,6 +21,15 @@ namespace Business.Constants
         public static string ColorAdded = "Renk eklendi";
         public static string ColorNameInvalid = "Renk ismi geçersiz ";
         public static string NameProperty = "2 karakterden fazla giriniz ";
+        public static string CustomerUpdeted = "Müşteri güncellendi";
+        public static string CustomerDeleted = "Müşteri silindi";
+        public static string CustomerAdded = "Müşteri eklendi";
+        public static string UserUpdeted = "Kullanıcı güncellendi";
+        public static string UserDeleted = "Kullanıcı silindi";
+        public static string UserAdded = "Kullanıcı eklendi";
+        public static string RentalUpdeted = "Kiralama güncellendi";
+        public static string RentalDeleted = "Kiralama silindi";
+        public static string RentalAdded = "Kiralama eklendi";
 
     }
 }
